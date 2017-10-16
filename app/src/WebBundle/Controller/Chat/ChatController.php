@@ -2,8 +2,6 @@
 
 namespace WebBundle\Controller\Chat;
 
-use FullStackTest\Message\Domain\Model\Message;
-use FullStackTest\Message\Domain\Model\MessageRepository;
 use FullStackTest\Message\Domain\Services\Query\FindAllQueryHandler;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
