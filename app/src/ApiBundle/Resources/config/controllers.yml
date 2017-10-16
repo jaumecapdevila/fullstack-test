@@ -1,0 +1,4 @@
+services:
+  ApiBundle\Controller\Chat\Message\PostOneController:
+    class: ApiBundle\Controller\Chat\Message\PostOneController
+    autowire: true

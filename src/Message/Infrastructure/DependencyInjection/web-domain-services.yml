@@ -1,0 +1,7 @@
+services:
+  FullStackTest\Message\Domain\Services\Query\FindAllQueryHandler:
+      class: FullStackTest\Message\Domain\Services\Query\FindAllQueryHandler
+      autowire: true
+  FullStackTest\Message\Domain\Services\Command\Post\PostOneCommandHandler:
+        class: FullStackTest\Message\Domain\Services\Command\Post\PostOneCommandHandler
+        autowire: true

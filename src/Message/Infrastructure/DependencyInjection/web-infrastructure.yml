@@ -1,0 +1,7 @@
+services:
+  FullStackTest\Message\Domain\Model\MessageRepository:
+      class: FullStackTest\Message\Domain\Model\MessageRepository
+      alias: FullStackTest\Message\Infrastructure\InSessionMessageRepository
+  FullStackTest\Message\Infrastructure\InSessionMessageRepository:
+      class: FullStackTest\Message\Infrastructure\InSessionMessageRepository
+      autowire: true

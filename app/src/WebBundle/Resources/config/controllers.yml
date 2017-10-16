@@ -1,0 +1,4 @@
+services:
+  WebBundle\Controller\Chat\ChatController:
+    class: WebBundle\Controller\Chat\ChatController
+    autowire: true

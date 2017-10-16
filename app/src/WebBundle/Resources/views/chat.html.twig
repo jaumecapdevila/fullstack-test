@@ -1,0 +1,28 @@
+{% extends "@Web/base.html.twig" %}
+
+{% block title %}Chat{% endblock %}
+{% block content %}
+    <div class="chat-body">
+        <div class="chat-header">
+            <p class="header-name">Cool name</p>
+        </div>
+        <ol class="messages-list">
+            {% for message in messages %}
+                <li class="message sender-message">
+                    <p class="message-text">{{ message }}</p>
+                    <img class="message-img" src="/img/user_icon.png" alt="Profile image">
+                </li>
+            {% endfor %}
+        </ol>
+        <div class="form-container">
+            <form id="messages-form">
+                <input type="text" data-user-id="" name="message" class="message-to-send"
+                       placeholder="Write a message...">
+            </form>
+        </div>
+    </div>
+{% endblock %}
+{% block scripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/chat.js') }}"></script>
+{% endblock %}

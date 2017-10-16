@@ -1,0 +1,3 @@
+imports:
+  - {resource: 'web-infrastructure.yml' }
+  - {resource: 'web-domain-services.yml' }
